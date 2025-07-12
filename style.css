@@ -1,0 +1,172 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fefefe;
+  color: #111;
+  line-height: 1.8;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: gray;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.nav-links a.active {
+  color: black;
+  font-weight: bold;
+}
+
+.container {
+  width: 100%;
+  max-width: 1600px;
+  margin: auto;
+  padding: 3rem 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.main-grid {
+  display: flex;
+  gap: 5rem;
+  align-items: flex-start;
+}
+
+.hero-content-block {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.hero-img {
+  width: 100%;
+  border-radius: 10px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+.hero-content p {
+  font-size: 1.3rem;
+  color: #555;
+  max-width: 95%;
+}
+
+.read-btn {
+  background-color: #f25c54;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.new-section {
+  flex: 1;
+  background-color: #00001a;
+  color: white;
+  padding: 2.5rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  height: fit-content;
+}
+
+.new-section h2 {
+  color: #e9ab53;
+  font-size: 2.8rem;
+}
+
+.new-article h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.new-article p {
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+.article-cards {
+  display: flex;
+  gap: 4rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  display: flex;
+  gap: 1.8rem;
+  max-width: 500px;
+  flex: 1 1 30%;
+}
+
+.card img {
+  width: 140px;
+  height: 180px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.card-number {
+  color: #ccc;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.card h4 {
+  font-size: 1.4rem;
+  margin: 0.3rem 0;
+  font-weight: bold;
+}
+
+.card p {
+  font-size: 1.1rem;
+  color: #444;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
